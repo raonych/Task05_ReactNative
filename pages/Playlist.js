@@ -81,30 +81,35 @@ export default function Playlist(){
 
 const styles = StyleSheet.create({
     container:{
-        padding: 20 
+        padding: 20,
+        backgroundColor: '#1b1a21'
       },
       musicas:{
         marginTop: 30    
       },
       musica:{
-        backgroundColor:'#ededed',
+        backgroundColor:'#14141a',
         padding:'20',
         marginVertical:10,
         borderRadius: 15,
-        elevation: 12
+        elevation: 6,
+        shadowColor: 'white',
       },
       nome:{
           fontSize: 22,
-           fontWeight: "bold" , 
+           fontWeight: "bold" ,
+           color: 'white' 
       },
       nomeBanda:{
           fontSize: 15,
           marginBottom: 15, 
+          color: 'white'
       },
       duracao:{
         fontSize: 13,
           fontWeight: "light",
-          marginBottom: -10
+          marginBottom: -10,
+          color: 'white'
 
       },
       searchBar: {

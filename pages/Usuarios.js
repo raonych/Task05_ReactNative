@@ -8,7 +8,7 @@ export default function Usuario(){
         <View style={styles.container}>
             <Text style={styles.nomeUsuario}>Nome do usuário</Text>
         <View style={styles.placeholder}>
-        <MaterialCommunityIcons name="account" color="#666" size={120} style={styles.icon} />
+        <MaterialCommunityIcons name="account" color="white" size={120} style={styles.icon} />
         </View>
         <View style={styles.bio}>
         <Text style={styles.text}>Estudante de desenvolvimento de sistemas</Text>
@@ -22,41 +22,51 @@ export default function Usuario(){
 const styles = StyleSheet.create({
     container:{
         flex:1, 
-        marginTop:'25%',
+        paddingTop:'25%',
         alignItems: 'center',
+        backgroundColor:'#1b1a21',
         padding: 10,
     },
     titulo:{
         margin: 20,
         fontSize: 20,
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'white'
     },
     placeholder:{
         borderRadius: '50',
         width:'120',
         height:'120',
-        backgroundColor:'#ededed',
+        backgroundColor:'#14141a',
         borderRadius: 12,
-        elevation: 7,
-        marginBottom: 5
+        elevation: 3,
+        shadowColor: 'white',
+        marginBottom: 5,
+        marginBottom: 12
 
     },
     nomeUsuario:{
         fontSize:22,
-        fontWeight:'bold'
+        fontWeight:'bold',
+        color: 'white',
+        marginBottom: 15
     },
 
     text:{
         fontWeight:'bold',
         marginTop:10,
+        fontSize: 16,
+        color: 'white'
 
     },
     bio:{
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor:'#ededed',
+        backgroundColor:'#14141a',
         padding: 15,
         borderRadius: 12,
-        elevation: 17
+        elevation:4,
+        shadowColor: 'white',
+        color: 'white'
     }
 });
